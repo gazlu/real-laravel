@@ -1,0 +1,11 @@
+<?php namespace {{modelns}}\Models;
+
+	/**
+	* Model class for {{table}} table
+	*/
+	class {{table}} extends BaseEntity
+	{
+		var $table = '{{table}}';
+		
+		{{fields}}
+	}

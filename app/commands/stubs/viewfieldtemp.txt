@@ -1,0 +1,6 @@
+<div class="control-group">
+	<label for="{{field}}" class="control-label">{{field}}</label>
+	<div class="controls">
+		<input type="{{type}}" req="true" valsection="main" name="{{field}}" value="{{value}}" id="{{field}}" placeholder="Please enter {{field}}" class="input-large {{class}}">
+	</div>
+</div>

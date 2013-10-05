@@ -1,0 +1,21 @@
+<?php
+
+use {{modelns}}\Models\{{model}};
+	/**
+	* 
+	*/
+	class {{name}}Controller extends AppController
+	{
+		
+		function __construct()
+		{
+			parent::__construct(new {{model}}, '{{table}}');
+			$this->gridModel = array(
+									'table' => $this->entity->table,
+									'pk' => 'id',
+									'columns' => array({{columns}}),
+									'fields' => array({{columns}}),
+									'rowEloq' => DB::table('{{table}}')
+								);
+		}
+	}
